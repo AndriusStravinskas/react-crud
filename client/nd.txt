@@ -1,0 +1,13 @@
+1. Atkartoti pamokos darbą pažingsniui [0.2]
+  1.1 Serveryje jūsų sugalvoti duomeys [0.1]
+    * viena iš savybių yra nuotraukų masyvas, su BENT 3 nuotraukom
+    * viena iš savybių turi būti objektas
+    * nors viena savybė - skaičius
+    * ne mažiau 12 įrašų
+
+  1.2 parsiųsti duomenys naudojant api server ir axios instace ir atvaizduoti Home page [0.1]
+
+2. Atvaizduoti duomenis su savo sugalvotu/pavogtu dizainu [0.2]
+  * vienam puslapio dydžiui [0.1]
+  * 4 puslapio dydžiams [0.1]
+
