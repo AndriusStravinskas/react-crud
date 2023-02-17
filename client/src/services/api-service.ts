@@ -3,7 +3,7 @@ import GamesModels from 'models/games-model';
 
 const api = axios.create({
   baseURL: 'http://localhost:5007',
-  timeout: 1000,
+  timeout: 5000,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ const fetchGame = async (id : string | number) => {
   return data;
 };
 
-type CreateGameProps = Omit<GamesModels, 'id' | 'price'> & {
+type CreateGameProps = Omit<GamesModels, 'id' | 'price' | 'onDelete'> & {
   price: string
 };
 
