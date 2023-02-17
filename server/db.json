@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Spyder-man: Miles Morales",
-      "price": 23,
+      "price": "23.00€",
       "images": [
         "http://localhost:5007/Spyder-man-Miles-Morales.webp",
         "http://localhost:5007/Spyder-man-Miles-Morales-mobile.webp",
@@ -20,7 +20,7 @@
     {
       "id": 2,
       "title": "God of War Ragnarök",
-      "price": 46,
+      "price": "46.00€",
       "images": [
         "http://localhost:5007/God-of-War-Ragnarök.webp",
         "http://localhost:5007/God-of-War-Ragnarök-mobile.webp",
@@ -37,7 +37,7 @@
     {
       "id": 3,
       "title": "Assassin's Creed Valhalla",
-      "price": 18,
+      "price": "18.00€",
       "images": [
         "http://localhost:5007/Assassin's-Creed-Valhalla.webp",
         "http://localhost:5007/Assassin's-Creed-Valhalla-mobile.webp",
@@ -54,7 +54,7 @@
     {
       "id": 4,
       "title": "Days Gone",
-      "price": 12,
+      "price": "12.00€",
       "images": [
         "http://localhost:5007/Days-Gone.webp",
         "http://localhost:5007/Days-Gone-mobile.webp",
@@ -71,7 +71,7 @@
     {
       "id": 5,
       "title": "The Last Of Us",
-      "price": 18,
+      "price": "18.00€",
       "images": [
         "http://localhost:5007/TheLastOfUs-350x200.webp",
         "http://localhost:5007/TheLastOfUs-images-350x200.webp",
@@ -88,7 +88,7 @@
     {
       "id": 6,
       "title": "Grand Theft Auto V",
-      "price": 12.5,
+      "price": "13.00€",
       "images": [
         "http://localhost:5007/GTAV-350x200.webp",
         "http://localhost:5007/GTAV-images-350x200.webp",
@@ -105,7 +105,7 @@
     {
       "id": 7,
       "title": "Call of Duty: WWII",
-      "price": 9,
+      "price": "9.00€",
       "images": [
         "http://localhost:5007/WWII-350x200.webp",
         "http://localhost:5007/WWII-images-350x200.webp",
@@ -122,7 +122,7 @@
     {
       "id": 8,
       "title": "Far Cry 6",
-      "price": 25,
+      "price": "25.00€",
       "images": [
         "http://localhost:5007/Far-Cry-6-350x200.webp",
         "http://localhost:5007/Far-Cry-6-images-350x200.webp",
@@ -139,7 +139,7 @@
     {
       "id": 9,
       "title": "Uncharted 4: A Thief’s End",
-      "price": 25,
+      "price": "30.00€",
       "images": [
         "http://localhost:5007/Uncharted-350x200.webp",
         "http://localhost:5007/Uncharted-images-350x200.webp",
@@ -156,7 +156,7 @@
     {
       "id": 10,
       "title": "Assassin's Creed Odyssey",
-      "price": 15,
+      "price": "15.00€",
       "images": [
         "http://localhost:5007/Odyssey-350x200.webp",
         "http://localhost:5007/Odyssey-images-350x200.jpg",
@@ -173,7 +173,7 @@
     {
       "id": 11,
       "title": "Detroit: Become Human",
-      "price": 20,
+      "price": "12.00€",
       "images": [
         "http://localhost:5007/Detroit-350x200.webp",
         "http://localhost:5007/Detroit-images-350x200.jpg",
@@ -190,7 +190,7 @@
     {
       "id": 12,
       "title": "NBA 2k23",
-      "price": 55,
+      "price": "55.00€",
       "images": [
         "http://localhost:5007/NBA2K23_350x200.webp",
         "http://localhost:5007/NBA2K23-images-350x200.jpg",

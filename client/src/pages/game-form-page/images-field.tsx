@@ -13,8 +13,23 @@ import uniqid from 'uniqid';
 
 const initImagesIds: string[] = [uniqid()];
 
-const ImagesField = () => {
-  const [imagesIds, setImagesIds] = React.useState<string[]>(initImagesIds);
+type ImagesFieldProps = {
+  defaultImages?: string[],
+};
+
+const ImagesField: React.FC<ImagesFieldProps> = ({
+  defaultImages,
+}) => {
+  const imgMap = React.useMemo(() => (defaultImages !== undefined
+    ? defaultImages.reduce<{ [key in string]: string }>((prevMap, defaultImg) => ({
+      ...prevMap,
+      [uniqid()]: defaultImg,
+    }), {})
+    : undefined), [defaultImages]);
+
+  const [imagesIds, setImagesIds] = React.useState<string[]>(imgMap !== undefined
+    ? Object.keys(imgMap)
+    : initImagesIds);
 
   const addImageField = () => setImagesIds([...imagesIds, uniqid()]);
 
@@ -28,6 +43,7 @@ const ImagesField = () => {
       <Stack spacing={2}>
         {imagesIds.map((id) => (
           <TextField
+            defaultValue={imgMap && imgMap[id]}
             required
             key={id}
             name="images"

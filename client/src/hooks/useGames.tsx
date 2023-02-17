@@ -1,23 +1,18 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import React from 'react';
-import { Navigate } from 'react-router-dom';
 import GamesModels from 'models/games-model';
+import React from 'react';
 import ApiService from 'services/api-service';
-import routes from 'navigation/routes';
 
-const useGame = (id: string) => {
+const useGame = (id: string | undefined) => {
   const [game, setGame] = React.useState<GamesModels | undefined>(undefined);
 
-  if (game === undefined) {
-    return <Navigate to={routes.HomePage} />;
-  }
-
   React.useEffect(() => {
-    (async () => {
-      const fetchedGame = await ApiService.fetchGame(id);
+    if (id !== undefined) {
+      (async () => {
+        const fetchedGame = await ApiService.fetchGame(id);
 
-      setGame(fetchedGame);
-    })();
+        setGame(fetchedGame);
+      })();
+    }
   }, [id]);
 
   return game;

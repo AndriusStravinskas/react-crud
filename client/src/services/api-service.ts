@@ -22,9 +22,7 @@ const fetchGame = async (id : string | number) => {
   return data;
 };
 
-type CreateGameProps = Omit<GamesModels, 'id' | 'price' | 'onDelete'> & {
-  price: string
-};
+type CreateGameProps = Omit<GamesModels, 'id' | 'onDelete'>;
 
 const createGame = async (gameData: CreateGameProps) => {
   const { data } = await api.post<GamesModels>('/games', gameData);
