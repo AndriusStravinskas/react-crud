@@ -27,6 +27,8 @@ const GameFormPage: React.FC<GameFormPageProps> = ({
   const { id } = useParams();
   const game = useGame(id);
 
+  if (game === undefined) return null;
+
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
     if (formRef.current === null) return;
@@ -41,6 +43,8 @@ const GameFormPage: React.FC<GameFormPageProps> = ({
       } else {
         console.log('daromas atnaujinimas id:', id);
         console.log(values);
+        await ApiService.updateGame(game?.id, values);
+        navigate('/');
       }
     } catch (error) {
       alert(error instanceof Error ? error.message : error);

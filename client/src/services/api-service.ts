@@ -36,11 +36,18 @@ const deleteGame = async (id: string | number) => {
   return data;
 };
 
+const updateGame = async (id:string | number, gameData: CreateGameProps) => {
+  const { data } = await api.put<GamesModels[]>(`/games/${id}`, gameData);
+
+  return data;
+};
+
 const ApiService = {
   fetchGames,
   fetchGame,
   createGame,
   deleteGame,
+  updateGame,
 };
 
 export default ApiService;
