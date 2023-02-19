@@ -3,7 +3,7 @@ import { styled, Box } from '@mui/material';
 export const GameCardGrid = styled(Box)(({ theme }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(1, 1fr)',
-  gap: 2,
+  gap: 10,
   maxWidth: theme.breakpoints.values.xl,
   [theme.breakpoints.up('sm')]: {
     gridTemplateColumns: 'repeat(2, 1fr)',

@@ -27,8 +27,6 @@ const GameFormPage: React.FC<GameFormPageProps> = ({
   const { id } = useParams();
   const game = useGame(id);
 
-  if (game === undefined) return null;
-
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
     if (formRef.current === null) return;
@@ -36,16 +34,27 @@ const GameFormPage: React.FC<GameFormPageProps> = ({
     try {
       const values = formatValues(formRef.current);
 
-      if (mode === 'create') {
+      if (mode === 'update' && id !== undefined) {
+        console.log('daromas atnaujinimas id:', id);
+        console.log(values);
+        await ApiService.updateGame(id, values);
+        navigate('/');
+      } else {
         console.log('daromas sukurimas');
         await ApiService.createGame(values);
         navigate('/');
-      } else {
-        console.log('daromas atnaujinimas id:', id);
-        console.log(values);
-        await ApiService.updateGame(game?.id, values);
-        navigate('/');
       }
+
+      // if (mode === 'create') {
+      //   console.log('daromas sukurimas');
+      //   await ApiService.createGame(values);
+      //   navigate('/');
+      // } else {
+      //   console.log('daromas atnaujinimas id:', id);
+      //   console.log(values);
+      //   await ApiService.updateGame(game?.id, values);
+      //   navigate('/');
+      // }
     } catch (error) {
       alert(error instanceof Error ? error.message : error);
     }

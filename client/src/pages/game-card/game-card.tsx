@@ -6,9 +6,9 @@ import {
   Button,
 } from '@mui/material';
 import GamesModels from 'models/games-model';
-import Img from 'components/ui/img';
 import { useNavigate } from 'react-router-dom';
 import routes from 'navigation/routes';
+import ImgGameCard from 'components/ui/img-game-card';
 import * as Styled from './styled';
 
 type GameCardProps = GamesModels;
@@ -24,7 +24,7 @@ const GameCard: React.FC<GameCardProps> = ({
 
   return (
     <Card
-      sx={{ width: '300px', position: 'relative' }}
+      sx={{ position: 'relative' }}
     >
       <Styled.AdminActions>
         <Button variant="contained" color="warning" onClick={() => navigate(routes.GameUpdatePage.createLink(id))}>
@@ -34,13 +34,18 @@ const GameCard: React.FC<GameCardProps> = ({
           Delete
         </Button>
       </Styled.AdminActions>
-      <Img
+      <ImgGameCard
         src={images[0]}
       />
-      <Button variant="contained" color="primary" onClick={() => navigate(routes.GamePage.createLink(id))}>
+      <Button
+        variant="outlined"
+        color="primary"
+        onClick={() => navigate(routes.GamePage.createLink(id))}
+        sx={{ ml: 2 }}
+      >
         View
       </Button>
-      <CardContent>
+      <CardContent sx={{ p: 1 }}>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
@@ -48,7 +53,6 @@ const GameCard: React.FC<GameCardProps> = ({
           {description}
         </Typography>
       </CardContent>
-
     </Card>
   );
 };

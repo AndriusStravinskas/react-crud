@@ -1,5 +1,5 @@
 type GamesModels = {
-  id: number,
+  id: string,
   title: string,
   price: string,
   images: string[],

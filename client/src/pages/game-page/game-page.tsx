@@ -19,7 +19,7 @@ const GamePage = () => {
   if (game === undefined) return null;
 
   return (
-    <Box width="300px">
+    <Box sx={{ width: '300px' }}>
       <Typography variant="h5" sx={{ textAlign: 'center' }}>{game.title}</Typography>
       <ImgSwiper {...game} />
       <Chip label={game.category} sx={{ mt: 3, color: 'primary.light' }} />
