@@ -6,7 +6,7 @@
       "price": "23.00€",
       "images": [
         "http://localhost:5007/Spyder-man-Miles-Morales.webp",
-        "http://localhost:5007/Spyder-man-Miles-Morales-mobile.webp",
+        "http://localhost:5007/Spyder-man-Miles-Morales-images.jpg",
         "http://localhost:5007/spyder-man-miles-morales-350x200.jpg"
       ],
       "description": "Apsivilkite patobulintą Spider Man kostiumą ir pasiruoškite apsaugoti Niujorką.",
@@ -74,8 +74,8 @@
       "price": "18.00€",
       "images": [
         "http://localhost:5007/TheLastOfUs-350x200.webp",
-        "http://localhost:5007/TheLastOfUs-images-350x200.webp",
-        "http://localhost:5007/TheLastOfUs-images2-350x200.jpg"
+        "http://localhost:5007/TheLastOfUs-images-350x200.jpeg",
+        "http://localhost:5007/TheLastOfUs-images2-350x200.jpeg"
       ],
       "description": "Pasinerkite į mirtinos pandemijos sugniuždytą pasaulį su šia patobulinta originalo versija – kuri iš pradžių buvo paleista PS3 konsolei – The Last of Us Remastered PS4 CD!",
       "category": "Nuotykių",
@@ -91,7 +91,7 @@
       "price": "13.00€",
       "images": [
         "http://localhost:5007/GTAV-350x200.webp",
-        "http://localhost:5007/GTAV-images-350x200.webp",
+        "http://localhost:5007/GTAV-images-350x200.jpg",
         "http://localhost:5007/GTAV-images2-350x200.jpg"
       ],
       "description": "Rockstar Games savo atviro pasaulio šedevrą Grand Theft Auto V pirmą kartą išleido 2013-siais, tačiau jau po metų nuo originaliosios išleidimo datos GTA V buvo pristatytas ir aštuntosios kartos konsolėms.",
@@ -108,7 +108,7 @@
       "price": "9.00€",
       "images": [
         "http://localhost:5007/WWII-350x200.webp",
-        "http://localhost:5007/WWII-images-350x200.webp",
+        "http://localhost:5007/WWII-images-350x200.jpg",
         "http://localhost:5007/WWII-images2-350x200.jpg"
       ],
       "description": "Norite išbandyti modernų žaidimą realistiškai atkuriantį Antrojo pasaulinio karo atmosferą? Įsigykite Call of Duty: World War 2 PS4 CD!",
@@ -125,7 +125,7 @@
       "price": "25.00€",
       "images": [
         "http://localhost:5007/Far-Cry-6-350x200.webp",
-        "http://localhost:5007/Far-Cry-6-images-350x200.webp",
+        "http://localhost:5007/Far-Cry-6-images-350x200.jpg",
         "http://localhost:5007/Far-Cry-6-images2-350x200.jpg"
       ],
       "description": "Ubisoft Toronto ir Ubisoft Entertainment žaidimų kūrėjų ir leidėjų komandos pristato vaizdo žaidimą, kuriame puikiai atskleidžiamas FPS žanras ir visas jo žavesys.",
@@ -142,7 +142,7 @@
       "price": "30.00€",
       "images": [
         "http://localhost:5007/Uncharted-350x200.webp",
-        "http://localhost:5007/Uncharted-images-350x200.webp",
+        "http://localhost:5007/Uncharted-images-350x200.jpg",
         "http://localhost:5007/Uncharted-images2-350x200.jpg"
       ],
       "description": "Įsigydami Uncharted 4: A Thief's End PS4 CD gausite progą išmėginti labiausiai atidirbtą ilgametės, išskirtinai PlayStation platformai leidžiamos studijos Noughty Dog sukurtos serijos žaidimą.",
@@ -225,7 +225,7 @@
       "images": [
         "https://cdn-products.eneba.com/resized-products/txutC1UdT4bC_lFIz5ef_0r7D0UPoUWmtHy9XletyjA_350x200_1x-0.png"
       ],
-      "description": "Labai geras zaidimas",
+      "description": "Labai geras zaidimas, jėgaa",
       "category": "Veiksmo",
       "condition": "Puiki",
       "location": {
