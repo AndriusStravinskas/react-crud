@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import useGame from '../../hooks/useGames';
 import ImgSwiper from './swiper';
+import { GamePageFlex, SwiperBox, TitleBig, TitleSmall } from './styled';
 
 const GamePage = () => {
   const { id } = useParams();
@@ -19,21 +20,26 @@ const GamePage = () => {
   if (game === undefined) return null;
 
   return (
-    <Box sx={{ width: '300px' }}>
-      <Typography variant="h5" sx={{ textAlign: 'center' }}>{game.title}</Typography>
-      <ImgSwiper {...game} />
-      <Chip label={game.category} sx={{ mt: 3, color: 'primary.light' }} />
-      <Box sx={{
-        display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 5,
-      }}
-      >
-        <Typography variant="body1" textAlign="center">{game.description}</Typography>
-        <Typography variant="body1" mt={5}>{`šalis: ${game.location.country}`}</Typography>
-        <Typography variant="body1">{`Miestas: ${game.location.city}`}</Typography>
-        <Typography variant="body1">{`Būklė: ${game.condition}`}</Typography>
-        <Typography variant="body1">{`Kaina: ${game.price}`}</Typography>
+    <GamePageFlex>
+      <TitleSmall variant="h5">{game.title}</TitleSmall>
+      <SwiperBox mb={5}>
+        <ImgSwiper {...game} />
+        <Chip label={game.category} sx={{ mt: 3, color: 'primary.light' }} />
+      </SwiperBox>
+      <Box>
+        <TitleBig variant="h4">{game.title}</TitleBig>
+        <Box sx={{
+          display: 'flex', flexDirection: 'column', alignItems: 'center',
+        }}
+        >
+          <Typography px={5} variant="body1" textAlign="center">{game.description}</Typography>
+          <Typography variant="body1" mt={5}>{`šalis: ${game.location.country}`}</Typography>
+          <Typography variant="body1">{`Miestas: ${game.location.city}`}</Typography>
+          <Typography variant="body1">{`Būklė: ${game.condition}`}</Typography>
+          <Typography variant="body1">{`Kaina: ${game.price}`}</Typography>
+        </Box>
       </Box>
-    </Box>
+    </GamePageFlex>
   );
 };
 
